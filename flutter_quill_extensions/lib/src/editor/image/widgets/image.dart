@@ -55,6 +55,7 @@ Image getImageWidgetByImageSource(
   required BuildContext context,
   required ImageEmbedBuilderProviderBuilder? imageProviderBuilder,
   required ImageErrorWidgetBuilder? imageErrorWidgetBuilder,
+  required ImageEmbedBuilderLoadingWidgetBuilder? loadingBuilder,
   double? width,
   double? height,
   AlignmentGeometry alignment = Alignment.center,
@@ -69,6 +70,7 @@ Image getImageWidgetByImageSource(
     height: height,
     alignment: alignment,
     errorBuilder: imageErrorWidgetBuilder,
+    loadingBuilder: loadingBuilder,
   );
 }
 

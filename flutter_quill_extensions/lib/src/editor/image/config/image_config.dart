@@ -16,6 +16,7 @@ class QuillEditorImageEmbedConfig {
     this.shouldRemoveImageCallback,
     this.imageProviderBuilder,
     this.imageErrorWidgetBuilder,
+    this.imageLoadingWidgetBuilder,
     this.onImageClicked,
   }) : _onImageRemovedCallback = onImageRemovedCallback;
 
@@ -102,6 +103,8 @@ class QuillEditorImageEmbedConfig {
   /// by default the default error from flutter framework will thrown
   ///
   final ImageEmbedBuilderErrorWidgetBuilder? imageErrorWidgetBuilder;
+
+  final ImageEmbedBuilderLoadingWidgetBuilder? imageLoadingWidgetBuilder;
 
   /// What should happen when the image is pressed?
   ///

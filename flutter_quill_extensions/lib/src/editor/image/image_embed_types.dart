@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart'
-    show ImageErrorWidgetBuilder, ImageProvider;
+    show ImageChunkEvent, ImageErrorWidgetBuilder, ImageProvider, Widget;
 import 'package:flutter/widgets.dart' show BuildContext;
 import 'package:flutter_quill/flutter_quill.dart';
 import 'package:meta/meta.dart' show immutable;
@@ -65,3 +65,9 @@ typedef ImageEmbedBuilderProviderBuilder = ImageProvider? Function(
 );
 
 typedef ImageEmbedBuilderErrorWidgetBuilder = ImageErrorWidgetBuilder;
+
+typedef ImageEmbedBuilderLoadingWidgetBuilder = Widget Function(
+  BuildContext context,
+  Widget child,
+  ImageChunkEvent? loadingProgress,
+);

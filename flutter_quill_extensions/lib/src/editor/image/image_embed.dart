@@ -36,6 +36,7 @@ class QuillEditorImageEmbedBuilder extends EmbedBuilder {
       context: context,
       imageSource,
       imageProviderBuilder: config.imageProviderBuilder,
+      loadingBuilder: config.imageLoadingWidgetBuilder,
       imageErrorWidgetBuilder: config.imageErrorWidgetBuilder,
       alignment: alignment,
       height: height,
