@@ -70,4 +70,5 @@ typedef ImageEmbedBuilderLoadingWidgetBuilder = Widget Function(
   BuildContext context,
   Widget child,
   ImageChunkEvent? loadingProgress,
+  String imageUrl,
 );

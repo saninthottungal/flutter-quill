@@ -70,7 +70,11 @@ Image getImageWidgetByImageSource(
     height: height,
     alignment: alignment,
     errorBuilder: imageErrorWidgetBuilder,
-    loadingBuilder: loadingBuilder,
+    loadingBuilder: loadingBuilder == null
+        ? null
+        : (context, child, loadingProgress) {
+            return loadingBuilder(context, child, loadingProgress, imageSource);
+          },
   );
 }
 
