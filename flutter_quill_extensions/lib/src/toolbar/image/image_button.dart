@@ -40,6 +40,8 @@ class QuillToolbarImageButton extends QuillToolbarBaseButtonStateless {
       onImageInsertCallback: options?.imageButtonConfig?.onImageInsertCallback,
       onImageInsertedCallback:
           options?.imageButtonConfig?.onImageInsertedCallback,
+      onImageInsertBeforeCallback:
+          options?.imageButtonConfig?.onImageInsertBeforeCallback,
     );
   }
 

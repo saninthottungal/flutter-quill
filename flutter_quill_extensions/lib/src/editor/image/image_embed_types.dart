@@ -42,6 +42,7 @@ class QuillToolbarImageConfig {
     this.onRequestPickImage,
     this.onImageInsertedCallback,
     this.onImageInsertCallback,
+    this.onImageInsertBeforeCallback,
   });
 
   final OnRequestPickImage? onRequestPickImage;
@@ -49,6 +50,8 @@ class QuillToolbarImageConfig {
   final OnImageInsertedCallback? onImageInsertedCallback;
 
   final OnImageInsertCallback? onImageInsertCallback;
+
+  final OnImageInsertCallback? onImageInsertBeforeCallback;
 }
 
 typedef ImageEmbedBuilderWillRemoveCallback = Future<bool> Function(

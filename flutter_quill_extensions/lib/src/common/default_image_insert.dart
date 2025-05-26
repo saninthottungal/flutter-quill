@@ -19,8 +19,11 @@ Future<void> handleImageInsert(
   required QuillController controller,
   required OnImageInsertCallback? onImageInsertCallback,
   required OnImageInsertedCallback? onImageInsertedCallback,
+  required OnImageInsertCallback? onImageInsertBeforeCallback,
 }) async {
   final customOnImageInsert = onImageInsertCallback;
+  await onImageInsertBeforeCallback?.call(imageUrl, controller);
+
   if (customOnImageInsert != null) {
     await customOnImageInsert.call(imageUrl, controller);
   } else {

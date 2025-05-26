@@ -23,6 +23,7 @@ class QuillToolbarCameraConfig {
     this.onRequestCameraActionCallback,
     this.onImageInsertCallback,
     this.onImageInsertedCallback,
+    this.onImageInsertBeforeCallback,
     this.onVideoInsertedCallback,
     this.onVideoInsertCallback,
   });
@@ -32,6 +33,8 @@ class QuillToolbarCameraConfig {
   final OnImageInsertedCallback? onImageInsertedCallback;
 
   final OnImageInsertCallback? onImageInsertCallback;
+
+  final OnImageInsertCallback? onImageInsertBeforeCallback;
 
   final OnVideoInsertedCallback? onVideoInsertedCallback;
 

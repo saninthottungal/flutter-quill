@@ -84,6 +84,8 @@ class QuillToolbarCameraButton extends QuillToolbarBaseButtonStateless {
           onImageInsertCallback: options?.cameraConfig?.onImageInsertCallback,
           onImageInsertedCallback:
               options?.cameraConfig?.onImageInsertedCallback,
+          onImageInsertBeforeCallback:
+              options?.cameraConfig?.onImageInsertBeforeCallback,
         );
     }
   }
